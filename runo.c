@@ -1,22 +1,26 @@
+// Program to take 5 values from the user and store them in an array
+// Print the elements stored in the array
+
 #include <stdio.h>
 
 int main() {
-   char str1[20], str2[20], str3[20], str4[20], str5[20], str6[20];
+   char adjectivi[20], partitiivi[20], perusmuoto[20], paikan[20], perusmuodo[20];
+   int number;
   
   printf("Anna adjektiivia: ");
-  scanf("%s", str1);
+  scanf("%s", adjectivi);
   printf("Anna Substantiivin partitiivin monikkona: ");
-  scanf("%s", str2);
+  scanf("%s", partitiivi);
   printf("Anna Verbin  perusmuoto: ");
-  scanf("%s", str3);
+  scanf("%s", perusmuoto);
   printf("Anna Paikan: ");
-  scanf("%s", str4);
+  scanf("%s", paikan);
   printf("Anna Numeron: ");
-  scanf("%s", str5);
+  scanf("%i", &number);
   printf("Anna Substantviivin perusmuodossa: ");
-  scanf("%s", str6);
+  scanf("%s", perusmuodo);
   
-  printf("Anna kun kerron tarinan.\nOli %s ihminen.\nHän halusi saada paljon %s.\nSaadakseen ne häntä käskettiin %s.\n%s on se paikka mistä %s löytyy %s.\nKoska hän ei halunnut %s, %s %s oli hänen kohtalo etsiessään %s", str1,str2, str3, str4, str2, str5, str3, str1, str6, str2);
+  printf("Anna kun kerron tarinan.\nOli %s ihminen.\nHän halusi saada paljon %s.\nSaadakseen ne häntä käskettiin %s!\n%s on se paikka mistä %s löytyy %i.\nKoska hän ei halunnut %s, %s %s oli hänen kohtalo etsiessään %s", adjectivi, partitiivi, perusmuoto, paikan, partitiivi, number, perusmuoto, adjectivi, perusmuodo, partitiivi);
 
   return 0;
 }
