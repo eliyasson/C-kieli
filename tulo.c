@@ -9,11 +9,11 @@ int main() {
     
     int tulos;
     
-    printf("Anna luku1 ");
+    printf("Anna luku1 (alle 10 arvoltaan): ");
     scanf("%d", &a);
-    printf("Anna luku2 ");
+    printf("Anna luku2  (alle 10 arvoltaan): ");
     scanf("%d", &b);
-    printf("Anna luku3 ");
+    printf("Anna luku3  (alle 10 arvoltaan): ");
     scanf("%d", &c);
     
     tulos=a*b*c;
