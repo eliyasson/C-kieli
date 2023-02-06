@@ -40,13 +40,18 @@ int main() {
     
     printf("Fahrenheita (f) vai Celsius (c) ? ");
     scanf("%c", &c);
-    
+    if (c != 'F' && c != 'C' && c != 'c' && c != 'f'){
+        printf("Invalid temperature unit entered.\n");
+        return 1;
+    }
     printf("Anna lampotila: ");
     scanf("%f", &temp);
-    if (c == 'f','F' ){
+    if (c == 'f' || c == 'F' ){
         temp = (temp - 32)/1.8;
-        printf("%.2f C: ", temp);
-    }
+        printf("%.2f C\n", temp);
+    } else if (c == 'C' || c == 'c') {
+        printf("%.2f°C\n", temp);
+    } 
     
     if(temp < 0){
         printf("on pakkasta");
