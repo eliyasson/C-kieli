@@ -20,7 +20,11 @@ int main() {
                 break;
             
             case 'n':
-                printf("\nLuvun neljäsjuuri %.2lf", sqrt(num));
+                if (num > 0){
+                    printf("\nLuvun neljäsjuuri %.2lf", sqrt(num));
+                } else {
+                    printf("Virhe");
+                }
                 break;
             
             case 'i':
